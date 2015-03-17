@@ -1,0 +1,183 @@
+0	00	00	no error
+0	5d	00	no sense - pfa threshold reached
+1	01	00	recovered write error - no index
+1	02	00	recovered no seek completion
+1	03	00	recovered write error - write fault
+1	09	00	track following error
+1	0b	01	temperature warning
+1	0c	01	recovered write error with auto-realloc - reallocated
+1	0c	03	recovered write error - recommend reassign
+1	12	01	recovered data without ecc using prev logical block id
+1	12	02	recovered data with ecc using prev logical block id
+1	14	01	recovered record not found
+1	16	00	recovered write error - data sync mark error
+1	16	01	recovered write error - data sync error - data rewritten
+1	16	02	recovered write error - data sync error - recommend rewrite
+1	16	03	recovered write error - data sync error - data auto-reallocated
+1	16	04	recovered write error - data sync error - recommend reassignment
+1	17	00	recovered data with no error correction applied
+1	17	01	recovered read error - with retries
+1	17	02	recovered data using positive offset
+1	17	03	recovered data using negative offset
+1	17	05	recovered data using previous logical block id
+1	17	06	recovered read error - without ecc, auto reallocated
+1	17	07	recovered read error - without ecc, recommend reassign
+1	17	08	recovered read error - without ecc, recommend rewrite
+1	17	09	recovered read error - without ecc, data rewritten
+1	18	00	recovered read error - with ecc
+1	18	01	recovered data with ecc and retries
+1	18	02	recovered read error - with ecc, auto reallocated
+1	18	05	recovered read error - with ecc, recommend reassign
+1	18	06	recovered data using ecc and offsets
+1	18	07	recovered read error - with ecc, data rewritten
+1	1c	00	defect list not found
+1	1c	01	primary defect list not found
+1	1c	02	grown defect list not found
+1	1f	00	partial defect list transferred
+1	44	00	internal target failure
+1	5d	00	pfa threshold reached
+2	04	00	not ready - cause not reportable.
+2	04	01	not ready - becoming ready
+2	04	02	not ready - need initialise command (start unit)
+2	04	03	not ready - manual intervention required
+2	04	04	not ready - format in progress
+2	04	09	not ready - self-test in progress
+2	31	00	not ready - medium format corrupted
+2	31	01	not ready - format command failed
+2	35	02	not ready - enclosure services unavailable
+2	3a	00	not ready - medium not present
+2	3a	01	not ready - medium not present - tray closed
+2	3a	02	not ready - medium not present - tray open
+2	4c	00	diagnostic failure - config not loaded
+3	02	00	medium error - no seek complete
+3	03	00	medium error - write fault
+3	10	00	medium error - id crc error
+3	11	00	medium error - unrecovered read error
+3	11	01	medium error - read retries exhausted
+3	11	02	medium error - error too long to correct
+3	11	04	medium error - unrecovered read error - auto re-alloc failed
+3	11	0b	medium error - unrecovered read error - recommend reassign
+3	14	01	medium error - record not found
+3	16	00	medium error - data sync mark error
+3	16	04	medium error - data sync error - recommend reassign
+3	19	00	medium error - defect list error
+3	19	01	medium error - defect list not available
+3	19	02	medium error - defect list error in primary list
+3	19	03	medium error - defect list error in grown list
+3	19	0e	medium error - fewer than 50% defect list copies
+3	31	00	medium error - medium format corrupted
+3	31	01	medium error - format command failed
+4	01	00	hardware error - no index or sector
+4	02	00	hardware error - no seek complete
+4	03	00	hardware error - write fault
+4	09	00	hardware error - track following error
+4	11	00	hardware error - unrecovered read error in reserved area
+4	15	01	hardware error - mechanical positioning error
+4	16	00	hardware error - data sync mark error in reserved area
+4	19	00	hardware error - defect list error
+4	19	02	hardware error - defect list error in primary list
+4	19	03	hardware error - defect list error in grown list
+4	31	00	hardware error - reassign failed
+4	32	00	hardware error - no defect spare available
+4	35	01	hardware error - unsupported enclosure function
+4	35	02	hardware error - enclosure services unavailable
+4	35	03	hardware error - enclosure services transfer failure
+4	35	04	hardware error - enclosure services refused
+4	35	05	hardware error - enclosure services checksum error
+4	3e	03	hardware error - self-test failed
+4	3e	04	hardware error - unable to update self-test
+4	44	00	hardware error - internal target failure
+5	1a	00	illegal request - parm list length error
+5	20	00	illegal request - invalid/unsupported command code
+5	21	00	illegal request - lba out of range
+5	24	00	illegal request - invalid field in cdb (command descriptor block)
+5	25	00	illegal request - invalid lun
+5	26	00	illegal request - invalid fields in parm list
+5	26	01	illegal request - parameter not supported
+5	26	02	illegal request - invalid parm value
+5	26	03	illegal request - invalid field parameter - threshold parameter
+5	26	04	illegal request - invalid release of persistent reservation
+5	2c	00	illegal request - command sequence error
+5	35	01	illegal request - unsupported enclosure function
+5	49	00	illegal request - invalid message
+5	53	00	illegal request - media load or eject failed
+5	53	01	illegal request - unload tape failure
+5	53	02	illegal request - medium removal prevented
+5	55	00	illegal request - system resource failure
+5	55	01	illegal request - system buffer full
+5	55	04	illegal request - insufficient registration resources
+6	28	00	unit attention - not-ready to ready transition (format complete)
+6	29	00	unit attention - por or device reset occurred
+6	29	01	unit attention - por occurred
+6	29	02	unit attention - scsi bus reset occurred
+6	29	03	unit attention - target reset occurred
+6	29	04	unit attention - self-initiated-reset occurred
+6	29	05	unit attention - transceiver mode change to se
+6	29	06	unit attention - transceiver mode change to lvd
+6	2a	00	unit attention - parameters changed
+6	2a	01	unit attention - mode parameters changed
+6	2a	02	unit attention - log select parms changed
+6	2a	03	unit attention - reservations pre-empted
+6	2a	04	unit attention - reservations released
+6	2a	05	unit attention - registrations pre-empted
+6	2f	00	unit attention - commands cleared by another initiator
+6	3f	00	unit attention - target operating conditions have changed
+6	3f	01	unit attention - microcode changed
+6	3f	02	unit attention - changed operating definition
+6	3f	03	unit attention - inquiry parameters changed
+6	3f	05	unit attention - device identifier changed
+6	5d	00	unit attention - pfa threshold reached
+7	27	00	write protect - command not allowed
+b	00	00	aborted command - no additional sense code
+b	1b	00	aborted command - sync data transfer error (extra ack)
+b	25	00	aborted command - unsupported lun
+b	3f	0f	aborted command - echo buffer overwritten
+b	43	00	aborted command - message reject error
+b	44	00	aborted command - internal target failure
+b	45	00	aborted command - selection/reselection failure
+b	47	00	aborted command - scsi parity error
+b	48	00	aborted command - initiator-detected error message received
+b	49	00	aborted command - inappropriate/illegal message
+b	4b	00	aborted command - data phase error
+b	4e	00	aborted command - overlapped commands attempted
+b	4f	00	aborted command - due to loop initialisation
+e	1d	00	miscompare - during verify byte check operation
+x	05	00	illegal request
+x	06	00	unit attention
+x	07	00	data protect
+x	08	00	lun communication failure
+x	08	01	lun communication timeout
+x	08	02	lun communication parity error
+x	08	03	lun communication crc error
+x	09	00	vendor specific sense key
+x	09	01	servo fault
+x	09	04	head select fault
+x	0a	00	error log overflow
+x	0b	00	aborted command
+x	0c	00	write error
+x	0c	02	write error - auto-realloc failed
+x	0e	00	data miscompare
+x	12	00	address mark not found for id field
+x	14	00	logical block not found
+x	15	00	random positioning error
+x	15	01	mechanical positioning error
+x	15	02	positioning error detected by read of medium
+x	27	00	write protected
+x	29	00	por or bus reset occurred
+x	31	01	format failed
+x	32	01	defect list update error
+x	32	02	no spares available
+x	35	01	unspecified enclosure services failure
+x	37	00	parameter rounded
+x	3d	00	invalid bits in identify message
+x	3e	00	lun not self-configured yet
+x	40	01	dram parity error
+x	40	02	dram parity error
+x	42	00	power-on or self-test failure
+x	4c	00	lun failed self-configuration
+x	5c	00	rpl status change
+x	5c	01	spindles synchronised
+x	5c	02	spindles not synchronised
+x	65	00	voltage fault
+x	¡Ý80	x	vendor specific
+x	x	¡Ý80	vendor specific

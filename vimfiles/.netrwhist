@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='C:\SHARE_WITH_LAPTOP\logs\58797070'
+let g:netrw_dirhist_2='C:/SHARE_WITH_LAPTOP/logs/58797070'
+let g:netrw_dirhist_3='C:\SHARE_WITH_LAPTOP\logs\58797070'
+let g:netrw_dirhist_4='C:/SHARE_WITH_ALL/logs/67615416 GARANTI BANKASI/CKM00114300986-diagnostics-2014-12-04-02.09.22/mgmt_server/cluster-1/clilogs'
